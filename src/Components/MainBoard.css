@@ -1,0 +1,14 @@
+.mainboard {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+  }
+  
+  .mainboard__container {
+    background-color: white;
+    display: flex;
+    width: 80%;
+  }
