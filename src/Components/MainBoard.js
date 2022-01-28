@@ -2,11 +2,15 @@ import React from "react";
 import Pin from "./Pin";
 import "./MainBoard.css";
 
-function MainBoard() {
+function MainBoard(props) {
+  let { pins } = props;
   return (
     <div className="mainboard">
       <div className="mainboard__container">
-        <Pin />
+        {pins.map((pin, index) => {
+          let { urls } = pin;
+         return <Pin key={index} urls={urls} />;
+        })}
       </div>
     </div>
   );
