@@ -32,7 +32,7 @@ function App() {
     let promises = [];
     let pinData = [];
 
-    let pins = ["ocean", "Tokyo", "dogs", "cats"]
+    let pins = ["ocean", "Tokyo", "dogs", "cats","pencils","weather", "bags"]
     pins.forEach((pinTerm) => {
       promises.push(
         getImages(pinTerm).then((res) => {

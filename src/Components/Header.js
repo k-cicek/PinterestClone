@@ -20,14 +20,16 @@ function Header(props) {
   return (
     <div className="header">
       <div className="header__logo">
-        <PinterestIcon />
+        <IconButton >
+          <PinterestIcon style={{ color: "#e60023", height: "24px", width:"24px" }}/>
+        </IconButton>
       </div>
       <div className="header__homepage">
         <a href="/">HomePage</a>
       </div>
       <div className="header__search">
         <div className="header__searchbar">
-          <SearchIcon />
+          <SearchIcon/>
           <form>
             <input type="text" onChange={(e) => setInput(e.target.value)} />
             <button type="submit" onClick={onSearchSubmit}></button>
